@@ -1,0 +1,55 @@
+{
+	"name": "Formulaire/index.waPage/index.html",
+	"type": "page",
+	"version": "1.0.0",
+	"loadDependencies": [
+		{
+			"id": "Desktop_Core",
+			"version": "1.0.0",
+			"type": "core"
+		},
+		{
+			"id": "Widget/label",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/calendar",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/dataGrid",
+			"type": "widget"
+		},
+		{
+			"package": "Container"
+		},
+		{
+			"package": "TextInput"
+		},
+		{
+			"package": "Checkbox"
+		},
+		{
+			"package": "Text"
+		},
+		{
+			"package": "Button"
+		},
+		{
+			"package": "Matrix"
+		},
+		{
+			"package": "metal"
+		},
+		{
+			"file": "styles/index.css"
+		},
+		{
+			"file": "application.css",
+			"path": "WEBFOLDER"
+		},
+		{
+			"file": "scripts/index.js"
+		}
+	]
+}
