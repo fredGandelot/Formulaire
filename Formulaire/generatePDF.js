@@ -2,7 +2,6 @@ function generatePDF (request)
 {
 
 var param = request.parts[0].asText;
-console.log(param)
 var a = ds.TReport.query('id =:1', param);
 
 var Printer = require("print");
@@ -27,7 +26,7 @@ if(result){
 	var message = new mail.Mail();
 	
 	message.addField('From', 'frederic.gandelot@gmail.com'); 
-	message.addField('To',  'frederic.gandelot@wakanda.io'); 
+	message.addField('To',  'slc@skynet.be'); 
 	message.addField('Subject', 'Formulaire');  
 	message.setBody('Voir PJ');  
 	message.addAttachment (outputFile, 'Formulaire.pdf', 'application/pdf');
