@@ -1,0 +1,1 @@
+addHttpRequestHandler('/generatePDF', 'generatePDF.js', 'generatePDF');

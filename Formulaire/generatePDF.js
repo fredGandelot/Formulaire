@@ -1,5 +1,10 @@
-exports.generatePDF= function generatePDF () 
+function generatePDF (request) 
 {
+
+var param = request.parts[0].asText;
+console.log(param)
+var a = ds.TReport.query('id =:1', param);
+
 var Printer = require("print");
 
 var templateFile = File("/PROJECT/templates/formulaire.html");
@@ -7,7 +12,12 @@ var randomName   = generateUUID() + ".pdf";
 var outputFile   = File("/DATA/" + randomName);
 
 var variables    = {
-	"title" : "Mon Titre"
+	"title" : "Mon Titre il est bien" ,
+	"ID"    :  a.id,
+	"MARKET":  a.market,
+	"DIRECTEUR" : a.directeur,
+	"FRANCHISE" :a.franchise,
+	"DATE" : a.date
 	};
 
 var result = Printer.pdfFromTemplate(templateFile, outputFile, variables);
@@ -33,7 +43,10 @@ if(result){
 	outputFile.remove();
 };
 
-result = "Votre PDF a bien été envoyé :) ";
+result = "ca marche bien cette histoire!";
 return result;
 
 };
+
+
+

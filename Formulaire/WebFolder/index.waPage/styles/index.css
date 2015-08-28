@@ -5,19 +5,19 @@
 
 #button2 {
 	z-index: 9;
-	width: 92px;
+	width: 111px;
 	height: 34px;
-	top: 521px;
-	left: 350px;
+	top: 531px;
+	left: 346px;
 	position: absolute;
 }
 
 #dataGrid1 {
 	z-index: 8;
-	width: 786px;
+	width: 783px;
 	height: 300px;
-	top: 590px;
-	left: 13px;
+	top: 600px;
+	left: 9px;
 	position: absolute;
 }
 
@@ -25,8 +25,8 @@
 	z-index: 7;
 	width: 92px;
 	height: 34px;
-	top: 521px;
-	left: 124px;
+	top: 531px;
+	left: 120px;
 	position: absolute;
 }
 
@@ -433,8 +433,8 @@
 	z-index: 5;
 	width: 92px;
 	height: 34px;
-	top: 521px;
-	left: 236px;
+	top: 531px;
+	left: 232px;
 	position: absolute;
 }
 
@@ -442,8 +442,8 @@
 	z-index: 2;
 	width: 767px;
 	height: 190px;
-	top: 14px;
-	left: 23px;
+	top: 24px;
+	left: 19px;
 	position: absolute;
 }
 
@@ -451,8 +451,17 @@
 	z-index: 6;
 	width: 765px;
 	height: 258px;
-	top: 220px;
-	left: 24px;
+	top: 230px;
+	left: 20px;
+	position: absolute;
+}
+
+#RequestHandler {
+	z-index: 10;
+	width: 106px;
+	height: 34px;
+	top: 532px;
+	left: 470px;
 	position: absolute;
 }
 
